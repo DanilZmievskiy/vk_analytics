@@ -44,6 +44,7 @@ def get_vk_posts() -> None:
                                             'count': 100,
                                             'offset': offset})
             
+            response.raise_for_status()
             data = response.json()['response']['items']
             posts.append(data)
             time.sleep(5)
@@ -74,6 +75,7 @@ def get_vk_posts() -> None:
                                                  'views_count'])
         
         df['date'] = pd.to_datetime(df['date'], unit='s')
+        df['date'] = df['date'].dt.strftime('%Y-%m-%d %H:%M:%S')
         return df
     
 
