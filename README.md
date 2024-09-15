@@ -5,7 +5,7 @@ ETL пайплайн для выгрузки данных со стены соо
 
 ## Описание
 Данные берем при помощи HTTP запросов к <a href="https://dev.vk.com/ru/reference" target="blank">VK API</a>, метод <i>wall.get</i>. Тело запроса:
-```json
+```jsonc
 {
     "access_token": "VK_TOKEN", // Серверный ключ приложения
     "v": "5.199", // Версия API
@@ -28,7 +28,7 @@ ETL пайплайн для выгрузки данных со стены соо
 
 Пример дашборда для аналитики сообщества ВК (Tableau):
 
-![Dashboard](./dashboard.png)
+<img src="dashboard.png" alt="Dashboard" width="550"/>
 
 ## Как развернуть проект?
 1) Склонировать репозиторий
