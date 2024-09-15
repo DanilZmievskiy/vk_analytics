@@ -7,7 +7,7 @@ ETL пайплайн для выгрузки данных со стены соо
 Данные берем при помощи HTTP запросов к <a href="https://dev.vk.com/ru/reference" target="blank">VK API</a>, метод <i>wall.get</i>. Тело запроса:
 ```json
 {
-    "access_token": VK_TOKEN, // Серверный ключ приложения
+    "access_token": "VK_TOKEN", // Серверный ключ приложения
     "v": "5.199", // Версия API
     "domain": "", // Короткое название сообщества
     "count": 100, // Количестко записей
