@@ -21,4 +21,4 @@ class CloudConnection:
                 "https://www.googleapis.com/auth/drive",
             ],
         )
-        self.client = gspread.authorize(self.credentials)
+        self._client = gspread.authorize(self.credentials)
